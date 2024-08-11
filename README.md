@@ -54,6 +54,9 @@ void main(array<String^>^ args)
 
 ---
 
+# 도움을 준 영상
+[YouTube](https://www.youtube.com/watch?v=AINCOpXma6M)
+
 # **면책 조항(Disclaimer)**
 ### English
 By using this code, the author bears no responsibility for any issues that may arise. The usage of this code is at the user's discretion, and any consequences resulting from it are solely the responsibility of the user. The author assumes no liability for any outcomes or damages incurred from the use of this code. The user absolves the author of any accountability for losses or damages resulting from the usage of this code. By using this code, the user agrees to the following terms and acknowledges being sufficiently warned of any potential risks associated with its use:

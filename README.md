@@ -12,7 +12,7 @@ Visual Studio Installer에서 다음 옵션들을 선택하여 설치합니다:
 
 ### 추가 설정
 
-- **C++ 를 사용한 데스크톱 개발(Desktop development with C++) -> C++/CLI support for v143 build tools**를 선택합니다.**
+- **C++ 를 사용한 데스크톱 개발(Desktop development with C++) -> C++/CLI support for v143 build tools**를 선택합니다.
 
 ## 2. 프로젝트 설정
 

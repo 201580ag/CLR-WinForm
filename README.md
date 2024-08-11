@@ -1,3 +1,46 @@
+# C++/CLI 프로젝트 생성 및 설정 가이드
+
+이 가이드는 Visual Studio에서 C++/CLI 프로젝트를 설정하고, Windows Forms 애플리케이션을 만드는 방법을 설명합니다. 아래 단계에 따라 프로젝트를 설정할 수 있습니다.
+
+## 1. Visual Studio 설치 및 필요한 구성 요소 선택
+
+Visual Studio Installer에서 다음 옵션들을 선택하여 설치합니다:
+
+- **.NET Multi-Platform App UI 개발(.NET Multi-Platform App UI development)**
+- **.NET 데스크톱 개발(.NET desktop development)**
+- **C++ 를 사용한 데스크톱 개발(Desktop development with C++)**
+
+### 추가 설정
+
+- **C++ 를 사용한 데스크톱 개발(Desktop development with C++) -> C++/CLI support for v143 build tools**를 선택합니다.**
+
+## 2. 프로젝트 설정
+
+### 링커 설정
+
+프로젝트 속성에서 다음 항목들을 설정합니다:
+
+1. **링커** -> **시스템** -> **하위 시스템**: `창 (/SUBSYSTEM:WINDOWS)`로 설정합니다.
+2. **링커** -> **고급** -> **집입점**: `main`으로 설정합니다.
+
+## 3. 코드 작성
+
+`MainForm.cpp` 파일에서 아래와 같이 코드를 작성합니다:
+
+```cpp
+using namespace System;
+using namespace System::Windows::Forms;
+
+void main(array<String^>^ args)
+{
+    Application::EnableVisualStyles();
+    Application::SetCompatibleTextRenderingDefault(false);
+    Project_name::MainForm form; // Project_name = Your Project Name, MainForm = Your Form Name
+    Application::Run(% form);
+}
+```
+
+여기서, `Project_name`은 당신의 프로젝트 이름으로, `MainForm`은 당신이 생성한 폼의 이름으로 변경해야 합니다.
 
 # **면책 조항(Disclaimer)**
 ### English

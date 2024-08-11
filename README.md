@@ -1,3 +1,5 @@
+---
+
 # C++/CLI 프로젝트 생성 및 설정 가이드
 
 이 가이드는 Visual Studio에서 C++/CLI 프로젝트를 설정하고, Windows Forms 애플리케이션을 만드는 방법을 설명합니다. 아래 단계에 따라 프로젝트를 설정할 수 있습니다.
@@ -8,13 +10,17 @@ Visual Studio Installer에서 다음 옵션들을 선택하여 설치합니다:
 
 - **.NET Multi-Platform App UI 개발(.NET Multi-Platform App UI development)**
 - **.NET 데스크톱 개발(.NET desktop development)**
-- **C++ 를 사용한 데스크톱 개발(Desktop development with C++)**
+- **C++를 사용한 데스크톱 개발(Desktop development with C++)**
 
 ### 추가 설정
 
-- **C++ 를 사용한 데스크톱 개발(Desktop development with C++) -> C++/CLI support for v143 build tools**를 선택합니다.
+- **C++를 사용한 데스크톱 개발(Desktop development with C++) -> C++/CLI support for v143 build tools**를 선택합니다.
 
 ## 2. 프로젝트 설정
+
+### 새 Windows Form 추가
+
+1. **프로젝트 추가** -> **새 항목** -> **Visual C++** -> **UI** -> **Windows Form**을 선택합니다.
 
 ### 링커 설정
 
@@ -22,6 +28,10 @@ Visual Studio Installer에서 다음 옵션들을 선택하여 설치합니다:
 
 1. **링커** -> **시스템** -> **하위 시스템**: `창 (/SUBSYSTEM:WINDOWS)`로 설정합니다.
 2. **링커** -> **고급** -> **집입점**: `main`으로 설정합니다.
+
+### 에러 해결
+
+- **디자이너를 로드하기 전에 데이터가 손실되지 않게 하려면 다음 오류를 해결해야 합니다.**라는 오류가 발생할 경우, Visual Studio를 재시작하여 문제를 해결할 수 있습니다.
 
 ## 3. 코드 작성
 
@@ -41,6 +51,8 @@ void main(array<String^>^ args)
 ```
 
 여기서, `Project_name`은 당신의 프로젝트 이름으로, `MainForm`은 당신이 생성한 폼의 이름으로 변경해야 합니다.
+
+---
 
 # **면책 조항(Disclaimer)**
 ### English
